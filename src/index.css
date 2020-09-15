@@ -1,6 +1,4 @@
 body {
-  text-align: center;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -13,7 +11,6 @@ code {
     monospace;
 }
 .divClass {
-  width: 600px;
   font-weight: bold;
   font-size: 30px;
   margin: auto;
@@ -36,16 +33,19 @@ code {
   width: 30px;
   background-color: lightsteelblue;
 }
-.tdclass {
-  width: 70px;
-}
-.tdcount {
-  width: 30px;
-}
 
+.tdcount {
+  width: 20%;
+}
+.tdsubject {
+  width: 40%;
+}
+.tdbutton {
+  width: 40%;
+}
 .tclass {
   margin: auto;
-  width: 70%;
+  width: 300px;
   border: 1px solid black;
   text-align: center;
   background-color: ivory;

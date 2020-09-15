@@ -4,7 +4,7 @@ class Vote extends Component {
     content: [
       { count: 0, subject: 'PHP', id: 1 },
       { count: 0, subject: 'Python', id: 2 },
-      { count: 0, subject: 'Go', id: 3 },
+      { count: 0, subject: 'C++', id: 3 },
       { count: 0, subject: 'Java', id: 4 },
     ],
   };
@@ -28,8 +28,8 @@ class Vote extends Component {
                 <table className="tclass">
                   <tr className="trclass">
                     <td className="tdcount">{x.count}</td>
-                    <td className="tdclass">{x.subject}</td>
-                    <td className="tdclass">
+                    <td className="tdsubject">{x.subject}</td>
+                    <td className="tdbutton">
                       <button
                         className="buttonclass"
                         onClick={() => this.handleClick(x)}
