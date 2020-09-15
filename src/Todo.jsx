@@ -1,29 +1,29 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 class Todo extends Component {
   state = {
     a: ['lunch', 'dinner'],
     b: '',
-  }
+  };
   handleChange = (e) => {
-    const x = e.target.value
-    this.setState({ b: x })
+    const x = e.target.value;
+    this.setState({ b: x });
     // this.setState({ a: [1, 2] })
-  }
+  };
   onDelete = (e) => {
-    const x = e.target.value
-    const list = [...this.state.a]
-    list.splice(x, 1)
+    const x = e.target.value;
+    const list = [...this.state.a];
+    list.splice(x, 1);
     //delete list[x]
-    this.setState({ a: list })
-  }
+    this.setState({ a: list });
+  };
 
   handleClick = () => {
-    this.setState({ a: [...this.state.a, this.state.b] })
-  }
+    this.setState({ a: [...this.state.a, this.state.b] });
+  };
   render() {
     return (
       <div>
-        <h1>My Todo list </h1>
+        <h1>My Todo list Application</h1>
         {this.state.a.map((x, i) => (
           <div>
             <p>
@@ -45,8 +45,8 @@ class Todo extends Component {
           Add to list
         </button>
       </div>
-    )
+    );
   }
 }
 
-export default Todo
+export default Todo;
