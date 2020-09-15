@@ -13,31 +13,41 @@ code {
     monospace;
 }
 .divClass {
+  width: 600px;
   font-weight: bold;
   font-size: 30px;
-  margin-left: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.spanClass {
+  background-color: rgb(236, 140, 22);
+  margin: auto;
 }
 .buttonclass {
-  background-color: none;
+  background-color: lightsteelblue;
+
   font-size: 30px;
   color: rgb(255, 0, 0);
   border: none;
+  cursor: pointer;
 }
 .trclass {
-  width: 30%;
+  width: 30px;
   background-color: lightsteelblue;
 }
 .tdclass {
-  width: 30%;
+  width: 70px;
+}
+.tdcount {
+  width: 30px;
 }
 
 .tclass {
-  margin-left: 310px;
-  width: 50%;
+  margin: auto;
+  width: 70%;
   border: 1px solid black;
-  align-text: center;
+  text-align: center;
   background-color: ivory;
-}
-.spanClass {
-  background-color: rgb(236, 140, 22);
+  table-layout: fixed;
 }
