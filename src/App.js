@@ -1,21 +1,21 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 class Vote extends Component {
   state = {
     content: [
-      { count: 1, subject: 'Php', id: 1 },
+      { count: 1, subject: 'PHP', id: 1 },
       { count: 1, subject: 'Pythhon', id: 2 },
       { count: 1, subject: 'Go', id: 3 },
       { count: 1, subject: 'Java', id: 4 },
     ],
-  }
+  };
   handleClick = (contentn) => {
-    const content = [...this.state.content]
-    const index = content.indexOf(contentn)
-    console.log(index)
-    content[index].count++
-    this.setState({ content })
-    console.log(this.state.content[index].count)
-  }
+    const content = [...this.state.content];
+    const index = content.indexOf(contentn);
+    console.log(index);
+    content[index].count++;
+    this.setState({ content });
+    console.log(this.state.content[index].count);
+  };
 
   render() {
     return (
@@ -40,12 +40,12 @@ class Vote extends Component {
                   </tr>
                 </table>
               </div>
-            )
+            );
           })}
         </span>
       </div>
-    )
+    );
   }
 }
 
-export default Vote
+export default Vote;
